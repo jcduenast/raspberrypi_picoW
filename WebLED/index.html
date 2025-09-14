@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Pico W Control</title>
+</head>
 <body>
-
-<form action="./lighton">
-<input type="submit" value="Light on"/>
-</form>
-<form action="./lightoff">
-<input type="submit" value="Light off"/>
-</form>
-
-<p>LED is {state}</p>
-<p> Temperature is {temperature}</p>
-<p>This is just text</p>
-
-<form action="./close">
-<input type="submit" value="Stop server"/>
-</form>
-
+    <form action="./lighton">
+        <input type="submit" value="Light on" />
+    </form>
+    <form action="./lightoff">
+        <input type="submit" value="Light off" />
+    </form>
+    <p>LED is {{STATE}}</p>
+    <p>Temperature is {{TEMP}}</p>
+    <form action="./close">
+        <input type="submit" value="Stop server"/>
+    </form>
 </body>
 </html>
